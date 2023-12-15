@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs7vucaw2k077"]
+
+[ext_resource type="Script" path="res://23-12-15_MiniJoypad/MiniJoypad.gd" id="1_jr27i"]
+
+[node name="MiniJoypad" type="Node2D"]
+script = ExtResource("1_jr27i")
