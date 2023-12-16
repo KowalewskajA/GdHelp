@@ -26,7 +26,7 @@ func draw_unfilled_circle(center:Vector2, radius:float, color:Color) -> void:
 	var nb_points:int = 32
 	var points_arc:Array = PackedVector2Array()
 	for i in range(nb_points + 1):
-		var angle_point:float = deg_to_rad(0 + i * 360.0 / nb_points - 90.0)
+		var angle_point:float = deg_to_rad(- 90.0 + i * 360.0 / nb_points )
 		points_arc.push_back(center + Vector2(cos(angle_point), sin(angle_point)) * radius)
 	for index_point in range(nb_points):
 		draw_line(points_arc[index_point], points_arc[index_point + 1], color)
